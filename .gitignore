@@ -1,5 +1,5 @@
 # Ambientes virtuais
-qvenv/
+qenv/
 venv/
 env/
 venv_build/
@@ -26,8 +26,8 @@ dist/
 *.swo
 
 # Arquivos de dados gerados pela aplicação (opcional, se não quiser versionar)
+#.png
 *.npz
-*.png
 *.jpg
 *.log
 

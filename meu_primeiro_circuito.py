@@ -52,7 +52,8 @@ print(contagens)
 # 5. Visualização (Plot)
 plot_histogram(contagens)
 plt.title("Resultados do estado de Bell")
-plt.savefig("resultado_histograma.png")
+plt.ylabel("Quantidade de medições")
+plt.savefig("resultado_histograma.png", bbox_inches="tight")
 print("\nGráfico salvo como 'resultado_histograma.png'.")
 
 
