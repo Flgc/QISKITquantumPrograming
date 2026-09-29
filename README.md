@@ -45,7 +45,7 @@ pip install qiskit qiskit-aer matplotlib
 
 ## 📂 Estrutura do projeto
 
-Este repositório contém a implementação de diferentes circuitos quânticos:
+Este repositório contém a implementações de diferentes circuitos quânticos:
 
 - **`meu_primeiro_circuito.py` (Estado de Bell):** Demonstra os fenômenos de superposição (Porta Hadamard) e emaranhamento quântico (Porta CNOT) entre dois qubits, retornando resultados estatísticos próximos a 50% para `00` e `11`.
 
@@ -72,6 +72,30 @@ deactivate
 ```
 
 ![Histograma do Estado de Bell](resultado_histograma.png)
+
+- **`grover_quantico_qiskit.py` (Algoritmo de Grover Quântico):** Demonstra os o algoritmo implementado.
+
+- **Algoritmo de Grover:** Implementação de busca em banco de dados não ordenado utilizando oráculos e reflexão de amplitude.
+
+**5. Execute o projeto:**
+
+```bash
+python3 grover_quantico_qiskit.py
+
+```
+
+![Execução](ExecutaGroverQuantico.png)
+
+**6. Encerre o ambiente:**
+
+Após terminar, finalize o ambiente virtual.
+
+```bash
+deactivate
+
+```
+
+![Histograma do Algoritmo de Grover](resultado_histograma_grover.png)
 
 ## 🛠️ Resolução de problemas comuns (Troubleshooting)
 
