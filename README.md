@@ -73,9 +73,15 @@ deactivate
 
 ![Histograma do Estado de Bell](resultado_histograma.png)
 
-- **`grover_quantico_qiskit.py` (Algoritmo de Grover Quântico):** Demonstra os o algoritmo implementado.
+## 🔀 Algoritmo de Grover
+
+- **`grover_quantico_qiskit.py` (Algoritmo de Grover):** Demonstra o algoritmo implementado.
 
 - **Algoritmo de Grover:** Implementação de busca em banco de dados não ordenado utilizando oráculos e reflexão de amplitude.
+
+- O circuito utiliza 5 qubits (incluindo qubits auxiliares) e constrói a solução através da criação inicial de uma superposição uniforme, seguida pela aplicação de um oráculo (utilizando portas Toffoli para marcação de fase) e pela reflexão de amplitude.
+
+- O script executa a simulação e gera um histograma que destaca visualmente a alta probabilidade estatística do elemento buscado após o colapso da função de onda.
 
 **5. Execute o projeto:**
 
@@ -96,6 +102,37 @@ deactivate
 ```
 
 ![Histograma do Algoritmo de Grover](resultado_histograma_grover.png)
+
+## 🧮 Algoritmo de Shor
+
+- **`shor_quantico_qiskit.py` (Algoritmo de Shor):**
+  Implementação focada na fatoração de números inteiros, com demonstração prática para $N=15$.
+
+- O circuito utiliza 12 qubits no total (8 para contagem e 4 auxiliadores) e constroí a solução através de um oráculo de exponenciação modular controlada seguindo pela Transformada de Fourier Quântica Inversa (IQFT ou QFT†) para extração do período da função.
+
+- O script gera gráficos de histograma e distribuição propabilística para evidencia os picos de interferência construtiva.
+
+**5. Execute o projeto:**
+
+```bash
+python3 shor_quantico_qiskit.py
+
+```
+
+![Execução](ExecutaShorQuantico.png)
+
+**6. Encerre o ambiente:**
+
+Após terminar, finalize o ambiente virtual.
+
+```bash
+deactivate
+
+```
+
+![Histograma do Algoritmo de Shor](resultado_histograma_shor.png)
+
+![Distribuição do Algoritmo de Shor](resultado_distribuicao_shor.png)
 
 ## 🛠️ Resolução de problemas comuns (Troubleshooting)
 

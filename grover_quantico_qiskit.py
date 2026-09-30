@@ -1,10 +1,13 @@
 # Algoritmo de Grover - Busca em Banco de Dados Não Ordenado
-# Atividade baseada no artigo "Fatoração de Números com Recursos da Computação Quântica Para Aplicação na Criptografia"
-# Min. Defesa Dep. Ciência e Tecnologia - IME)
-# Autoria original: Bianca de Meira Lopes e Thainá Lucciola Hipolito de Lima
+# Atividade baseada no projeto final de curso - Graduação Engenharia da Computação:
+#  "Fatoração de Números com Recursos da Computação Quântica Para Aplicação na Criptografia"
+# Min. Defesa Dep. Ciência e Tecnologia - IME
+# Autoria original: Bianca de Meira Lopes e Thainá Lucciola Hipolito de Lima - APÊNDICE D
+# Orientadores: José Antonio Moreira Xexéo, D.C. | Anderson Fernandes Pereira dos Santos,D.Sc.
 
 # Atualizações realizadas com base na versão do Linux Mint 22.1 (Xia), respeitando as diretrizes PEP 668.
 # Este código utiliza a sintaxe atualizada do Qiskit (1.x), garantindo compatibilidade moderna.
+# Bibliotecas de simulação atualizadas para incluir a transpilação explícita.
 
 # Rio de Janeiro-RJ - 29-09-26
 
@@ -12,7 +15,6 @@
 # Qiskit 1.x - Importes essenciais
 from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit, transpile
 from qiskit_aer import AerSimulator
-from numpy import pi
 from qiskit.visualization import plot_histogram
 import matplotlib.pyplot as plt
 
